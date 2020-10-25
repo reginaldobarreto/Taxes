@@ -1,4 +1,3 @@
-pj
 # Taxes
 
 ## Sobre o APP 
