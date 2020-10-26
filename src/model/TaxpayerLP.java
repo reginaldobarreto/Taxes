@@ -2,28 +2,34 @@ package model;
 
 public class TaxpayerLP extends Taxpayer{
 	
-	private Double numberEmployees;
+	private int numberEmployees;
 
-	public TaxpayerLP(String name, Double annual_Income) {
+	public TaxpayerLP(String name, Double annual_Income, int numberEmployees) {
 		super(name, annual_Income);
+		this.numberEmployees = numberEmployees;
 	}
 
 	public TaxpayerLP() {
 		super();
 	}
 	
-	public Double getNumberEmployees() {
+	public int getNumberEmployees() {
 		return numberEmployees;
 	}
 
-	public void setNumberEmployees(Double numberEmployees) {
+	public void setNumberEmployees(int numberEmployees) {
 		this.numberEmployees = numberEmployees;
 	}
 
 	@Override
 	public Double tax() {
-		// TODO Auto-generated method stub
-		return null;
+		Double tax;
+		if(getNumberEmployees() <= 10){
+			tax = super.getAnnual_Income() * 0.16 ;
+		}else {
+			tax = super.getAnnual_Income() * 0.14 ;
+		}
+		return tax;
 	}
 
 }
