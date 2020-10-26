@@ -46,12 +46,12 @@ public class Program {
         System.out.println("TAXES PAID:");
         double sumTaxes = 0;
         for (Taxpayer obj: taxpayers) {
-            System.out.println("Name: " + obj.getName() + String.format(" %.2f ",obj.tax()));
+        	
+            System.out.println("Name: " + obj.getName() + String.format(" $%.2f ",obj.tax()));
             sumTaxes += obj.tax();
         }
-        System.out.printf("TOTAL TAXES: $ %.2f" , sumTaxes);
-
-
+        System.out.println();
+        System.out.printf("TOTAL TAXES: $%.2f" , sumTaxes);
 
         scanner.close();
 

@@ -1,13 +1,7 @@
 
-# AppName
+# Taxes
 
 ## Sobre o APP 
-Esse aplicativo é um 
+Esse aplicativo simula calculo de impostos de empresa e pessoa fisica. 
 ## Conhecimento aplicado
-* Retrofit
-
-
-## Screeshots
-
-
--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------
+* Classes abstratas, herança total e polimorfismo
